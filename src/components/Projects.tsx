@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight } from "lucide-react";
 
 const projects = [
   {
@@ -34,8 +36,12 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-white py-24">
-      <div className="container-custom">
+    <section id="projects" className="bg-white py-24 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-0 left-1/4 w-72 h-72 bg-portfolio-blue/5 rounded-full filter blur-3xl"></div>
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-portfolio-green/5 rounded-full filter blur-3xl"></div>
+      
+      <div className="container-custom relative z-10">
         <h2 className="section-heading text-center">Featured Projects</h2>
         <p className="text-center section-subheading mx-auto">
           Explore some of my recent work and technical solutions
@@ -43,15 +49,24 @@ const Projects = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="project-card group">
-              <div className="relative overflow-hidden">
+            <Card 
+              key={index}
+              className="border-none shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 animate-fade-in"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <div className="relative overflow-hidden h-64">
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <div className="p-6 text-white w-full">
+                    <h3 className="text-xl font-bold">{project.title}</h3>
+                  </div>
+                </div>
               </div>
-              <div className="p-6">
+              <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <div className="mb-4 flex flex-wrap gap-2">
@@ -66,24 +81,13 @@ const Projects = () => {
                 </div>
                 <a 
                   href={project.link} 
-                  className="text-portfolio-blue font-medium hover:text-portfolio-darkblue flex items-center transition-all"
+                  className="text-portfolio-blue font-medium hover:text-portfolio-darkblue flex items-center transition-all group"
                 >
                   View Project
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    className="h-5 w-5 ml-1" 
-                    viewBox="0 0 20 20" 
-                    fill="currentColor"
-                  >
-                    <path 
-                      fillRule="evenodd" 
-                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" 
-                      clipRule="evenodd" 
-                    />
-                  </svg>
+                  <ArrowRight className="h-5 w-5 ml-1 transform group-hover:translate-x-1 transition-transform" />
                 </a>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>

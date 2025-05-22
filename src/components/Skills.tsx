@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Button } from "@/components/ui/button";
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -51,45 +52,53 @@ const Skills = () => {
     : skills.filter(skill => skill.category === activeCategory);
 
   return (
-    <section id="skills" className="bg-portfolio-gray py-24">
-      <div className="container-custom">
+    <section id="skills" className="bg-portfolio-gray py-24 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-20 left-0 w-80 h-80 bg-portfolio-blue/5 rounded-full filter blur-3xl"></div>
+      <div className="absolute bottom-20 right-0 w-96 h-96 bg-portfolio-green/5 rounded-full filter blur-3xl"></div>
+      
+      <div className="container-custom relative z-10">
         <h2 className="section-heading text-center">My Skills</h2>
         <p className="text-center section-subheading mx-auto">
           My technical toolbox and areas of expertise
         </p>
         
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-12 animate-fade-in">
           {categories.map((category) => (
-            <button
+            <Button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
+              variant={activeCategory === category.id ? "default" : "outline"}
               className={`px-4 py-2 rounded-full text-sm transition-all ${
                 activeCategory === category.id
-                  ? 'bg-portfolio-blue text-white'
+                  ? 'bg-portfolio-blue text-white shadow-md'
                   : 'bg-white text-gray-700 hover:bg-portfolio-lightblue'
               }`}
             >
               {category.name}
-            </button>
+            </Button>
           ))}
         </div>
         
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {filteredSkills.map((skill, index) => (
             <div 
               key={index}
-              className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all"
+              className="bg-white p-5 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all animate-fade-in"
+              style={{ animationDelay: `${index * 50}ms` }}
             >
-              <div className="flex justify-between items-center mb-2">
+              <div className="flex justify-between items-center mb-3">
                 <h3 className="font-medium">{skill.name}</h3>
-                <span className="text-sm text-gray-500">{skill.level}%</span>
+                <span className="text-sm font-semibold bg-portfolio-blue/10 text-portfolio-blue px-2 py-1 rounded-full">
+                  {skill.level}%
+                </span>
               </div>
-              <div className="w-full bg-gray-200 rounded-full h-2">
+              <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
                 <div 
-                  className="bg-portfolio-blue h-2 rounded-full" 
-                  style={{ width: `${skill.level}%` }}
+                  className="bg-gradient-to-r from-portfolio-blue to-portfolio-green h-2 rounded-full transition-all duration-700 ease-out" 
+                  style={{ width: `${skill.level}%`, transitionDelay: `${index * 50}ms` }}
                 ></div>
               </div>
             </div>
