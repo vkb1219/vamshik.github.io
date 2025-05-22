@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section id="home" className="pt-32 pb-24 bg-gradient-to-br from-portfolio-lightblue via-white to-portfolio-lightblue/30">
+  return <section id="home" className="pt-32 pb-24 bg-gradient-to-br from-portfolio-lightblue via-white to-portfolio-lightblue/30">
       <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="animate-fade-in space-y-6">
           <div className="inline-block px-4 py-2 bg-portfolio-blue/10 rounded-full mb-2">
@@ -16,9 +13,7 @@ const Hero = () => {
             Vamshi <span className="text-portfolio-blue">Krishna</span>
           </h1>
           
-          <h2 className="text-xl md:text-2xl text-gray-600">
-            Data Analyst | Data Engineer | Salesforce Developer
-          </h2>
+          <h2 className="text-xl md:text-2xl text-gray-600">Data Analyst | Data Engineer | Salesforce </h2>
           
           <p className="text-lg text-gray-700 max-w-lg">
             Building intelligent data systems for impactful decisions.
@@ -26,21 +21,14 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 pt-4">
-            <Button 
-              asChild
-              className="bg-portfolio-blue hover:bg-portfolio-darkblue text-white px-6 py-6 rounded-lg font-medium transition-all duration-300"
-            >
+            <Button asChild className="bg-portfolio-blue hover:bg-portfolio-darkblue text-white px-6 py-6 rounded-lg font-medium transition-all duration-300">
               <a href="#projects" className="flex items-center">
                 View My Work
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
             
-            <Button 
-              asChild 
-              variant="outline"
-              className="bg-white text-portfolio-blue border border-portfolio-blue px-6 py-6 rounded-lg font-medium hover:bg-portfolio-lightblue transition-all duration-300"
-            >
+            <Button asChild variant="outline" className="bg-white text-portfolio-blue border border-portfolio-blue px-6 py-6 rounded-lg font-medium hover:bg-portfolio-lightblue transition-all duration-300">
               <a href="#contact">Get in Touch</a>
             </Button>
           </div>
@@ -80,8 +68,6 @@ const Hero = () => {
       {/* Blob shapes for decoration */}
       <div className="hidden lg:block absolute top-32 left-0 w-72 h-72 bg-portfolio-blue/5 rounded-full filter blur-3xl z-0"></div>
       <div className="hidden lg:block absolute bottom-0 right-0 w-96 h-96 bg-portfolio-green/5 rounded-full filter blur-3xl z-0"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
