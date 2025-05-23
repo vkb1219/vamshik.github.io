@@ -14,7 +14,7 @@ const projects = [
     fullDescription: 'This project focused on developing an advanced convolutional neural network (CNN) for detecting diabetes from medical records. We processed thousands of patient records to train a model that can identify early signs of diabetes with high accuracy.',
     challenge: 'Medical data is often inconsistent, with missing values and different formats. We needed to clean the data while preserving its integrity and develop a model that could work with limited information.',
     solution: 'We implemented a TensorFlow-based CNN architecture with specialized preprocessing techniques for medical data. The model includes advanced features like dropout layers to prevent overfitting and batch normalization for training stability.',
-    results: 'Our model achieved 92% accuracy on unseen test data, significantly outperforming traditional statistical methods. It's now being evaluated for potential integration into clinical decision support systems.'
+    results: 'Our model achieved 92% accuracy on unseen test data, significantly outperforming traditional statistical methods. It is now being evaluated for potential integration into clinical decision support systems.'
   },
   {
     title: 'EV Charging Optimization',
@@ -25,7 +25,7 @@ const projects = [
     fullDescription: 'This project aimed to determine the optimal locations for new electric vehicle charging stations across Texas. We analyzed traffic patterns, existing infrastructure, and population density to identify underserved areas with high potential demand.',
     challenge: 'With limited resources, it was crucial to maximize the coverage and utility of each new charging station. We needed to balance urban needs with providing coverage for long-distance travel corridors.',
     solution: 'We applied K-Means clustering algorithms to geospatial data, incorporating weighted factors such as traffic density, existing charging infrastructure, and projected EV adoption rates. GeoPandas was used for the spatial data processing and analysis.',
-    results: 'The project identified 35 optimal locations that would provide charging access to over 85% of the Texas population within a 15-mile radius. The findings were presented to the state's transportation department for implementation planning.'
+    results: 'The project identified 35 optimal locations that would provide charging access to over 85% of the Texas population within a 15-mile radius. The findings were presented to the state transportation department for implementation planning.'
   },
   {
     title: 'Customer Segmentation Analysis',
@@ -45,7 +45,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2034&q=80',
     link: 'https://github.com/vamshikrishna/etl-pipeline',
     fullDescription: 'This project involved designing and implementing a scalable ETL (Extract, Transform, Load) data pipeline for a financial services company. The system needed to process terabytes of transaction data daily from multiple sources.',
-    challenge: 'The existing system was manual and error-prone, taking over 8 hours to complete daily processing. It couldn't scale to handle increasing data volumes, and errors were difficult to trace and resolve.',
+    challenge: 'The existing system was manual and error-prone, taking over 8 hours to complete daily processing. It could not scale to handle increasing data volumes, and errors were difficult to trace and resolve.',
     solution: 'We built a fully automated pipeline using Apache Spark for distributed processing and Apache Airflow for workflow orchestration. The entire solution was containerized with Docker to ensure consistent environments across development and production.',
     results: 'The new pipeline reduced processing time from 8+ hours to under 45 minutes, eliminated manual interventions, and provided comprehensive logging and error handling. It now handles 3x the original data volume with capacity to scale further.'
   }
