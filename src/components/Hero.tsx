@@ -51,7 +51,7 @@ const Hero = () => {
             <div className="absolute top-0 right-0 bg-white rounded-full shadow-lg p-3 z-20 animate-fade-in">
               <div className="flex flex-col items-center justify-center text-center">
                 <span className="text-xs text-gray-600">Experience</span>
-                <span className="text-lg font-bold text-portfolio-darkgray">5+ Years</span>
+                <span className="text-lg font-bold text-portfolio-darkgray">4+ Years</span>
               </div>
             </div>
             
