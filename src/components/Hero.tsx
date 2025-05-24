@@ -58,7 +58,7 @@ const Hero = () => {
             <div className="absolute -bottom-4 left-0 bg-white rounded-full shadow-lg p-3 z-20 animate-fade-in">
               <div className="flex flex-col items-center justify-center text-center">
                 <span className="text-xs text-gray-600">Projects</span>
-                <span className="text-lg font-bold text-portfolio-darkgray">15+</span>
+                <span className="text-lg font-bold text-portfolio-darkgray">8+</span>
               </div>
             </div>
           </div>
