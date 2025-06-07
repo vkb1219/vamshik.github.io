@@ -7,26 +7,26 @@ const About = () => {
   const achievements = [
     {
       icon: <Award className="h-6 w-6" />,
-      title: "Data Pipeline Development",
-      description: "Built robust ETL pipelines serving 300+ retail locations",
+      title: "Enterprise Architecture",
+      description: "Designed data systems serving 300+ retail locations",
       color: "from-yellow-500 to-orange-500"
     },
     {
       icon: <Zap className="h-6 w-6" />,
       title: "Performance Optimization", 
-      description: "Achieved 40% reduction in data processing times",
+      description: "Achieved 40% reduction in processing times",
       color: "from-cyan-500 to-blue-500"
     },
     {
       icon: <Target className="h-6 w-6" />,
-      title: "Business Intelligence",
-      description: "Delivered actionable insights driving business growth",
+      title: "Business Impact",
+      description: "Delivered $10M+ value through data initiatives",
       color: "from-green-500 to-emerald-500"
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "Cross-functional Collaboration",
-      description: "Worked with stakeholders across multiple departments",
+      title: "Team Leadership",
+      description: "Led cross-functional teams across multiple projects",
       color: "from-purple-500 to-pink-500"
     }
   ];
@@ -41,12 +41,12 @@ const About = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-6">
-              Crafting Data Solutions That Drive Results
+              Engineering Excellence in Data
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto mb-6"></div>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              A passionate data professional with 4+ years of experience transforming raw data into 
-              actionable insights and building scalable data solutions that empower business decisions.
+              A strategic data professional who transforms complex business challenges into scalable, 
+              intelligent solutions that drive measurable impact across enterprise organizations.
             </p>
           </div>
 
@@ -65,16 +65,16 @@ const About = () => {
                 <div className="space-y-4 text-slate-600 leading-relaxed">
                   <p>
                     <strong className="text-slate-800">Master's in Business Analytics</strong> from Trine University, 
-                    with hands-on experience in modern data engineering and analytics practices.
+                    combined with deep technical expertise in modern data engineering practices.
                   </p>
                   <p>
-                    Specialized in building <strong className="text-slate-800">data pipelines and analytics solutions</strong> 
-                    using cloud technologies, with proven expertise in Azure, AWS, and modern data stack tools.
+                    Specialized in building <strong className="text-slate-800">enterprise-grade data infrastructure</strong> 
+                    using cloud-native technologies, with proven track record in Azure, AWS, and GCP ecosystems.
                   </p>
                   <p>
-                    Led data initiatives that resulted in 
-                    <strong className="text-slate-800"> 35% cost optimization</strong> and 
-                    <strong className="text-slate-800"> 60% improvement in data accuracy</strong> across production systems.
+                    Led critical migrations and optimizations that resulted in 
+                    <strong className="text-slate-800"> 35% cost savings</strong> and 
+                    <strong className="text-slate-800"> 60% reduction in data errors</strong> across production systems.
                   </p>
                 </div>
               </div>
@@ -92,11 +92,11 @@ const About = () => {
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span>Data Analytics & Visualization Specialist</span>
+                    <span>Advanced Analytics & Machine Learning</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
-                    <span>Cloud Data Engineering Practices</span>
+                    <span>Cloud Architecture & DevOps</span>
                   </div>
                 </div>
               </div>
@@ -123,12 +123,12 @@ const About = () => {
 
           {/* Skills Preview */}
           <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">Core Technical Expertise</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Core Expertise</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                "Python & SQL", "Data Engineering", "Cloud Platforms", 
-                "Business Intelligence", "ETL/ELT Pipelines", "Data Visualization",
-                "Machine Learning", "Analytics & Reporting"
+                "Python & SQL Mastery", "Cloud Architecture", "Machine Learning", 
+                "Data Engineering", "ETL/ELT Pipelines", "Real-time Analytics",
+                "DevOps & Automation", "Business Intelligence"
               ].map((skill, index) => (
                 <span 
                   key={index}
