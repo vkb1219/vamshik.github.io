@@ -18,40 +18,40 @@ const Skills = () => {
 
   const skillCategories = {
     languages: [
-      { name: 'Python', level: 90, description: 'Data analysis, scripting, automation' },
-      { name: 'SQL', level: 85, description: 'Database queries, data manipulation' },
-      { name: 'R', level: 75, description: 'Statistical analysis, data modeling' },
-      { name: 'Shell Scripting', level: 70, description: 'Automation and system tasks' }
+      { name: 'Python', description: 'Data analysis, scripting, automation' },
+      { name: 'SQL', description: 'Database queries, data manipulation' },
+      { name: 'R', description: 'Statistical analysis, data modeling' },
+      { name: 'Shell Scripting', description: 'Automation and system tasks' }
     ],
     dataeng: [
-      { name: 'Apache Airflow', level: 85, description: 'Workflow orchestration and scheduling' },
-      { name: 'Apache Spark', level: 80, description: 'Large-scale data processing' },
-      { name: 'Apache Kafka', level: 75, description: 'Real-time data streaming' },
-      { name: 'SSIS', level: 80, description: 'SQL Server Integration Services' },
-      { name: 'Informatica', level: 75, description: 'Enterprise data integration platform' },
-      { name: 'ETL/ELT Pipelines', level: 85, description: 'Data extraction and transformation' }
+      { name: 'Apache Airflow', description: 'Workflow orchestration and scheduling' },
+      { name: 'Apache Spark', description: 'Large-scale data processing' },
+      { name: 'Apache Kafka', description: 'Real-time data streaming' },
+      { name: 'SSIS', description: 'SQL Server Integration Services' },
+      { name: 'Informatica', description: 'Enterprise data integration platform' },
+      { name: 'ETL/ELT Pipelines', description: 'Data extraction and transformation' }
     ],
     cloud: [
-      { name: 'Microsoft Azure', level: 85, description: 'Databricks, Data Factory, SQL Database' },
-      { name: 'Amazon AWS', level: 80, description: 'S3, Lambda, RDS, Redshift services' },
-      { name: 'Google Cloud', level: 75, description: 'BigQuery, Cloud Functions, Storage' }
+      { name: 'Microsoft Azure', description: 'Databricks, Data Factory, SQL Database' },
+      { name: 'Amazon AWS', description: 'S3, Lambda, RDS, Redshift services' },
+      { name: 'Google Cloud', description: 'BigQuery, Cloud Functions, Storage' }
     ],
     visualization: [
-      { name: 'Power BI', level: 90, description: 'Interactive dashboards and reports' },
-      { name: 'Tableau', level: 85, description: 'Advanced data visualizations' },
-      { name: 'Python Visualization', level: 80, description: 'Matplotlib, Seaborn, Plotly' },
-      { name: 'R Shiny', level: 70, description: 'Interactive web applications' }
+      { name: 'Power BI', description: 'Interactive dashboards and reports' },
+      { name: 'Tableau', description: 'Advanced data visualizations' },
+      { name: 'Python Visualization', description: 'Matplotlib, Seaborn, Plotly' },
+      { name: 'R Shiny', description: 'Interactive web applications' }
     ],
     ml: [
-      { name: 'TensorFlow', level: 75, description: 'Deep learning and neural networks' },
-      { name: 'Scikit-learn', level: 80, description: 'Machine learning algorithms' },
-      { name: 'Time Series Analysis', level: 80, description: 'Forecasting and trend analysis' },
-      { name: 'Natural Language Processing', level: 75, description: 'Text mining and sentiment analysis' }
+      { name: 'TensorFlow', description: 'Deep learning and neural networks' },
+      { name: 'Scikit-learn', description: 'Machine learning algorithms' },
+      { name: 'Time Series Analysis', description: 'Forecasting and trend analysis' },
+      { name: 'Natural Language Processing', description: 'Text mining and sentiment analysis' }
     ],
     salesforce: [
-      { name: 'Platform Developer I', level: 85, description: 'Apex, Lightning Components, SOQL' },
-      { name: 'Data Integration', level: 80, description: 'APIs, connectors, data synchronization' },
-      { name: 'Custom Objects & Fields', level: 75, description: 'Schema design and customization' }
+      { name: 'Platform Developer I', description: 'Apex, Lightning Components, SOQL' },
+      { name: 'Data Integration', description: 'APIs, connectors, data synchronization' },
+      { name: 'Custom Objects & Fields', description: 'Schema design and customization' }
     ]
   };
 
@@ -129,15 +129,11 @@ const Skills = () => {
                       key={index}
                       className="bg-gradient-to-br from-slate-50 to-white p-4 rounded-lg border border-slate-100 hover:shadow-md transition-all duration-300"
                     >
-                      <div className="flex justify-between items-center mb-2">
-                        <h4 className="font-semibold text-slate-800">{skill.name}</h4>
-                        <span className="text-sm text-slate-500">{skill.level}%</span>
-                      </div>
+                      <h4 className="font-semibold text-slate-800 mb-2">{skill.name}</h4>
                       <p className="text-sm text-slate-600 mb-3">{skill.description}</p>
                       <div className="w-full bg-slate-200 rounded-full h-2">
                         <div 
-                          className="bg-gradient-to-r from-cyan-500 to-blue-600 h-2 rounded-full transition-all duration-700"
-                          style={{ width: `${skill.level}%` }}
+                          className="bg-gradient-to-r from-cyan-500 to-blue-600 h-2 rounded-full transition-all duration-700 w-full"
                         />
                       </div>
                     </div>
@@ -155,16 +151,12 @@ const Skills = () => {
                   key={index}
                   className="bg-gradient-to-br from-slate-50 to-white p-6 rounded-xl border border-slate-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  <div className="flex justify-between items-center mb-3">
-                    <h4 className="font-bold text-slate-800 text-lg">{skill.name}</h4>
-                    <span className="text-sm font-medium text-slate-500">{skill.level}%</span>
-                  </div>
+                  <h4 className="font-bold text-slate-800 text-lg mb-3">{skill.name}</h4>
                   <p className="text-sm text-slate-600 mb-4">{skill.description}</p>
                   <div className="w-full bg-slate-200 rounded-full h-3">
                     <div 
-                      className="bg-gradient-to-r from-cyan-500 to-blue-600 h-3 rounded-full transition-all duration-700"
+                      className="bg-gradient-to-r from-cyan-500 to-blue-600 h-3 rounded-full transition-all duration-700 w-full"
                       style={{ 
-                        width: `${skill.level}%`,
                         transitionDelay: `${index * 100}ms`
                       }}
                     />
