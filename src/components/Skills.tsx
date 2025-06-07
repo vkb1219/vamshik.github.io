@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Database, Code, Cloud, BarChart3, Brain, Settings, Lightning } from "lucide-react";
+import { Database, Code, Cloud, BarChart3, Brain, Settings, Zap } from "lucide-react";
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -12,7 +13,7 @@ const Skills = () => {
     { id: 'cloud', name: 'Cloud Platforms', icon: <Cloud className="w-4 h-4" /> },
     { id: 'visualization', name: 'Visualization', icon: <BarChart3 className="w-4 h-4" /> },
     { id: 'ml', name: 'ML/AI', icon: <Brain className="w-4 h-4" /> },
-    { id: 'salesforce', name: 'Salesforce', icon: <Lightning className="w-4 h-4" /> }
+    { id: 'salesforce', name: 'Salesforce', icon: <Zap className="w-4 h-4" /> }
   ];
 
   const skillCategories = {
