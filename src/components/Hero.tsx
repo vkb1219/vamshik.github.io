@@ -1,15 +1,14 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, Code, Database, Cloud } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section id="home" className="min-h-screen pt-20 pb-16 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
+  return <section id="home" className="min-h-screen pt-20 pb-16 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-gradient-to-tr from-cyan-600/20 to-blue-600/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-gradient-to-tr from-cyan-600/20 to-blue-600/20 rounded-full blur-3xl animate-pulse" style={{
+        animationDelay: '2s'
+      }}></div>
       </div>
 
       {/* Grid pattern overlay */}
@@ -20,10 +19,7 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in">
             {/* Status Badge */}
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2">
-              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-white/90 text-sm font-medium">Available for New Opportunities</span>
-            </div>
+            
             
             {/* Main Heading */}
             <div className="space-y-4">
@@ -103,7 +99,9 @@ const Hero = () => {
               {/* Main Profile Container */}
               <div className="w-80 h-80 md:w-96 md:h-96 relative">
                 {/* Outer Ring Animation */}
-                <div className="absolute inset-0 border-2 border-cyan-400/30 rounded-full animate-spin" style={{ animationDuration: '20s' }}>
+                <div className="absolute inset-0 border-2 border-cyan-400/30 rounded-full animate-spin" style={{
+                animationDuration: '20s'
+              }}>
                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-cyan-400 rounded-full"></div>
                   <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-3 h-3 bg-blue-400 rounded-full"></div>
                   <div className="absolute left-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-purple-400 rounded-full"></div>
@@ -124,11 +122,15 @@ const Hero = () => {
                   <Database className="w-6 h-6 text-cyan-300" />
                 </div>
                 
-                <div className="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-sm rounded-full p-3 border border-white/20 animate-bounce" style={{ animationDelay: '1s' }}>
+                <div className="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-sm rounded-full p-3 border border-white/20 animate-bounce" style={{
+                animationDelay: '1s'
+              }}>
                   <Cloud className="w-6 h-6 text-blue-300" />
                 </div>
                 
-                <div className="absolute top-1/4 -left-8 bg-white/10 backdrop-blur-sm rounded-full p-3 border border-white/20 animate-bounce" style={{ animationDelay: '2s' }}>
+                <div className="absolute top-1/4 -left-8 bg-white/10 backdrop-blur-sm rounded-full p-3 border border-white/20 animate-bounce" style={{
+                animationDelay: '2s'
+              }}>
                   <Code className="w-6 h-6 text-purple-300" />
                 </div>
               </div>
@@ -136,8 +138,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
