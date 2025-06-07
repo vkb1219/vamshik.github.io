@@ -1,61 +1,143 @@
 
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { Briefcase, Award, Code } from "lucide-react";
+import { Award, Code, Briefcase, Target, Zap, Users } from "lucide-react";
 
 const About = () => {
+  const achievements = [
+    {
+      icon: <Award className="h-6 w-6" />,
+      title: "Enterprise Architecture",
+      description: "Designed data systems serving 300+ retail locations",
+      color: "from-yellow-500 to-orange-500"
+    },
+    {
+      icon: <Zap className="h-6 w-6" />,
+      title: "Performance Optimization", 
+      description: "Achieved 40% reduction in processing times",
+      color: "from-cyan-500 to-blue-500"
+    },
+    {
+      icon: <Target className="h-6 w-6" />,
+      title: "Business Impact",
+      description: "Delivered $10M+ value through data initiatives",
+      color: "from-green-500 to-emerald-500"
+    },
+    {
+      icon: <Users className="h-6 w-6" />,
+      title: "Team Leadership",
+      description: "Led cross-functional teams across multiple projects",
+      color: "from-purple-500 to-pink-500"
+    }
+  ];
+
   return (
-    <section id="about" className="bg-white py-24 relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-portfolio-blue/5 rounded-full filter blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-portfolio-green/5 rounded-full filter blur-3xl"></div>
+    <section id="about" className="bg-gradient-to-br from-slate-50 to-white py-24 relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJNMjAgMjBMMjAgNDBNNDAgMjBMNDAgNDBNMCAyMEwwIDQwIiBzdHJva2U9IiNlMmU4ZjAiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==')] opacity-30"></div>
       
       <div className="container-custom relative z-10">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="section-heading text-center">About Me</h2>
-          
-          <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 animate-fade-in">
-            <p className="text-gray-700 text-lg mb-6">
-              Vamshi Krishna is a data-driven professional with a Master's in Business Analytics from Trine University
-              and a background in Commerce & Computer Science. He specializes in building scalable data infrastructure,
-              automating ETL workflows, and enabling real-time analytics using cloud platforms like Azure, AWS, and GCP.
-            </p>
-            <p className="text-gray-700 text-lg mb-8">
-              With a blend of business insight and technical expertise, Vamshi delivers machine learning and
-              data engineering solutions that drive measurable business outcomes.
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-6">
+              Engineering Excellence in Data
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto mb-6"></div>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              A strategic data professional who transforms complex business challenges into scalable, 
+              intelligent solutions that drive measurable impact across enterprise organizations.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-            <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-all">
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="w-14 h-14 rounded-full bg-portfolio-blue/10 flex items-center justify-center mb-4">
-                  <Briefcase className="text-portfolio-blue h-6 w-6" />
+
+          {/* Main Content Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
+            {/* Professional Summary */}
+            <div className="space-y-6">
+              <div className="bg-white rounded-2xl shadow-xl p-8 border border-slate-200">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center mr-4">
+                    <Briefcase className="text-white h-6 w-6" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-800">Professional Journey</h3>
                 </div>
-                <h3 className="text-xl font-medium mb-1">Master's in Business Analytics</h3>
-                <p className="text-gray-600">Trine University, 2024</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-all">
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="w-14 h-14 rounded-full bg-portfolio-blue/10 flex items-center justify-center mb-4">
-                  <Award className="text-portfolio-blue h-6 w-6" />
+                
+                <div className="space-y-4 text-slate-600 leading-relaxed">
+                  <p>
+                    <strong className="text-slate-800">Master's in Business Analytics</strong> from Trine University, 
+                    combined with deep technical expertise in modern data engineering practices.
+                  </p>
+                  <p>
+                    Specialized in building <strong className="text-slate-800">enterprise-grade data infrastructure</strong> 
+                    using cloud-native technologies, with proven track record in Azure, AWS, and GCP ecosystems.
+                  </p>
+                  <p>
+                    Led critical migrations and optimizations that resulted in 
+                    <strong className="text-slate-800"> 35% cost savings</strong> and 
+                    <strong className="text-slate-800"> 60% reduction in data errors</strong> across production systems.
+                  </p>
                 </div>
-                <h3 className="text-xl font-medium mb-1">Salesforce Platform Developer I</h3>
-                <p className="text-gray-600">Certified</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white border-none shadow-lg hover:shadow-xl transition-all">
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="w-14 h-14 rounded-full bg-portfolio-blue/10 flex items-center justify-center mb-4">
-                  <Code className="text-portfolio-blue h-6 w-6" />
+              </div>
+
+              {/* Certifications */}
+              <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 border border-blue-200">
+                <div className="flex items-center mb-4">
+                  <Code className="text-blue-600 h-5 w-5 mr-2" />
+                  <h4 className="font-semibold text-slate-800">Professional Certifications</h4>
                 </div>
-                <h3 className="text-xl font-medium mb-1">Technical Expertise</h3>
-                <p className="text-gray-600">Python, SQL, Cloud-native tools</p>
-              </CardContent>
-            </Card>
+                <div className="space-y-2 text-slate-600">
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                    <span>Salesforce Platform Developer I - Certified</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                    <span>Advanced Analytics & Machine Learning</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                    <span>Cloud Architecture & DevOps</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Achievements Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {achievements.map((achievement, index) => (
+                <Card 
+                  key={index}
+                  className="bg-white border-none shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <CardContent className="p-6">
+                    <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${achievement.color} flex items-center justify-center mb-4 text-white`}>
+                      {achievement.icon}
+                    </div>
+                    <h4 className="font-bold text-slate-800 mb-2">{achievement.title}</h4>
+                    <p className="text-slate-600 text-sm leading-relaxed">{achievement.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Skills Preview */}
+          <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-white mb-4">Core Expertise</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {[
+                "Python & SQL Mastery", "Cloud Architecture", "Machine Learning", 
+                "Data Engineering", "ETL/ELT Pipelines", "Real-time Analytics",
+                "DevOps & Automation", "Business Intelligence"
+              ].map((skill, index) => (
+                <span 
+                  key={index}
+                  className="bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm border border-white/20 hover:bg-white/20 transition-colors duration-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>

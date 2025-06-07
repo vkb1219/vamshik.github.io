@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -47,10 +47,12 @@
   body {
     @apply bg-background text-foreground font-sans;
     scroll-behavior: smooth;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-display font-bold;
+    letter-spacing: -0.025em;
   }
 
   section {
@@ -62,23 +64,27 @@
   }
 
   .skill-tag {
-    @apply bg-portfolio-lightblue text-portfolio-blue px-4 py-2 rounded-full text-sm font-medium inline-block m-1;
+    @apply bg-gradient-to-r from-cyan-50 to-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium inline-block m-1 border border-blue-200;
   }
 
   .btn-primary {
-    @apply bg-portfolio-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-portfolio-darkblue transition-all duration-300 inline-flex items-center justify-center;
+    @apply bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-xl;
   }
 
   .btn-secondary {
-    @apply bg-white text-portfolio-blue border border-portfolio-blue px-6 py-3 rounded-lg font-medium hover:bg-portfolio-lightblue transition-all duration-300 inline-flex items-center justify-center;
+    @apply bg-white text-slate-700 border border-slate-300 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-all duration-300 inline-flex items-center justify-center shadow-sm hover:shadow-md;
   }
 
   .section-heading {
-    @apply text-3xl md:text-4xl font-bold mb-4 text-portfolio-darkgray;
+    @apply text-3xl md:text-4xl font-bold mb-4 text-slate-800;
+    background: linear-gradient(135deg, #1e293b, #475569);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .section-subheading {
-    @apply text-lg text-gray-600 mb-12 max-w-3xl;
+    @apply text-lg text-slate-600 mb-12 max-w-3xl leading-relaxed;
   }
 
   .animated-element {
@@ -87,17 +93,52 @@
 }
 
 .service-card {
-  @apply bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300;
+  @apply bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100;
 }
 
 .project-card {
-  @apply bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300;
+  @apply bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100;
 }
 
 .navbar-link {
-  @apply hover:text-portfolio-blue transition-all duration-300;
+  @apply hover:text-cyan-600 transition-all duration-300 font-medium;
 }
 
 .animated-element.visible {
   animation: fade-in 0.6s ease-out forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0891b2, #2563eb);
+}
+
+/* Enhanced Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
