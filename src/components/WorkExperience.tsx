@@ -9,16 +9,16 @@ const experiences = [
     company: "BTCM",
     period: "June 2024 - Present",
     responsibilities: [
-      "Designed and automated ETL pipelines using Apache Airflow and PySpark, reducing manual intervention by 30% and improving data delivery efficiency for 300+ retail stores.",
-      "Built scalable data pipelines on Azure Databricks to process and transform data from multiple sources (SQL Server, Oracle, Excel) for real-time reporting in Power BI.",
-      "Optimized SQL queries and database schemas, improving query performance by 25% and reducing execution times.",
-      "Containerized data workflows using Docker and orchestrated deployments with Kubernetes, improving scalability and reducing deployment times by 20%.",
-      "Developed machine learning models using Python and TensorFlow to forecast customer behavior, improving marketing campaign ROI by 15%.",
-      "Collaborated with cross-functional teams to implement data governance practices, ensuring data accuracy and compliance with privacy regulations.",
-      "Implemented real-time monitoring dashboards using Grafana and Prometheus to track data pipeline performance, reducing troubleshooting time by 40%.",
-      "Led the migration of on-premises data infrastructure to cloud platforms (AWS, Azure), resulting in 35% cost savings and improved system reliability.",
-      "Created automated data quality validation frameworks using Python and Great Expectations, reducing data errors by 60% in production pipelines.",
-      "Utilized NLP techniques on customer feedback data to extract actionable insights, directly contributing to a 12% improvement in customer satisfaction metrics."
+      "Developed automated ETL pipelines using Apache Airflow and PySpark, reducing manual data processing by 30% for 300+ retail stores.",
+      "Built scalable data solutions on Azure Databricks to process data from multiple sources (SQL Server, Oracle, Excel) for Power BI reporting.",
+      "Optimized SQL queries and improved database performance by 25%, reducing report generation times significantly.",
+      "Implemented containerized data workflows using Docker, improving deployment efficiency and system reliability.",
+      "Created machine learning models using Python and TensorFlow for customer behavior analysis, supporting marketing initiatives.",
+      "Collaborated with business teams to implement data quality standards and ensure accurate reporting across departments.",
+      "Developed monitoring dashboards using Grafana to track data pipeline performance and reduce troubleshooting time by 40%.",
+      "Supported cloud migration initiatives from on-premises to AWS and Azure, contributing to 35% cost savings.",
+      "Built automated data validation frameworks using Python, reducing data errors in production by 60%.",
+      "Applied NLP techniques to analyze customer feedback data, providing insights that improved customer satisfaction metrics by 12%."
     ]
   },
   {
@@ -26,16 +26,16 @@ const experiences = [
     company: "KFintech Pvt Ltd",
     period: "April 2020 - December 2021",
     responsibilities: [
-      "Designed and maintained ETL pipelines using SQL Server Integration Services (SSIS) and Informatica, reducing data delivery times by 30% and ensuring timely availability of financial data for 50+ reports.",
-      "Integrated 10+ financial data sources into a centralized data warehouse, improving data consistency by 20% and enabling seamless access for analytics.",
-      "Developed advanced SQL scripts and stored procedures to optimize data extraction, reducing processing times by 25%.",
-      "Created Power BI dashboards to track mortgage lifecycle metrics, improving visibility into loan processing stages for stakeholders.",
-      "Implemented data modeling techniques like star schema, snowflake schema to design efficient and scalable data warehouses, reducing storage costs by 15%.",
-      "Automated CI/CD pipelines using Jenkins and Terraform, streamlining deployment processes and reducing errors by 15%.",
-      "Spearheaded the implementation of a new data governance framework, ensuring GDPR compliance across all financial data processing systems.",
-      "Designed and implemented a comprehensive data catalog using Azure Data Catalog, improving data discoverability by 45% for business analysts.",
-      "Conducted training sessions for 30+ business users on self-service analytics tools, reducing dependency on the BI team by 25%.",
-      "Led a critical data migration project for legacy financial systems, successfully migrating 5TB of historical data with zero downtime."
+      "Designed and maintained ETL pipelines using SSIS and Informatica, improving data delivery efficiency by 30% for financial reporting.",
+      "Integrated multiple financial data sources into a centralized data warehouse, enhancing data consistency by 20%.",
+      "Developed optimized SQL scripts and stored procedures, reducing data processing times by 25% for critical reports.",
+      "Created comprehensive Power BI dashboards for mortgage lifecycle tracking, providing stakeholders with real-time insights.",
+      "Implemented star and snowflake schema designs for data warehouse optimization, reducing storage costs by 15%.",
+      "Automated deployment processes using Jenkins, streamlining releases and reducing errors by 15%.",
+      "Ensured GDPR compliance across financial data processing systems through improved data governance practices.",
+      "Implemented Azure Data Catalog for better data discoverability, improving analyst productivity by 45%.",
+      "Conducted training sessions for business users on self-service analytics tools, reducing BI team dependency by 25%.",
+      "Successfully managed data migration for legacy financial systems, processing 5TB of historical data with zero downtime."
     ]
   }
 ];
@@ -48,9 +48,9 @@ const WorkExperience = () => {
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-portfolio-green/5 rounded-full filter blur-3xl"></div>
       
       <div className="container-custom relative z-10">
-        <h2 className="section-heading text-center">Work Experience</h2>
+        <h2 className="section-heading text-center">Professional Experience</h2>
         <p className="text-center section-subheading mx-auto">
-          My professional journey and key accomplishments
+          My career journey in data analytics and engineering
         </p>
         
         <div className="space-y-12 mt-8 max-w-4xl mx-auto">

@@ -22,7 +22,7 @@ const Hero = () => {
             {/* Status Badge */}
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-white/90 text-sm font-medium">Available for Strategic Roles</span>
+              <span className="text-white/90 text-sm font-medium">Available for New Opportunities</span>
             </div>
             
             {/* Main Heading */}
@@ -36,20 +36,20 @@ const Hero = () => {
               
               <div className="space-y-2">
                 <h2 className="text-xl md:text-2xl text-blue-300 font-medium">
-                  Senior Data Engineering Architect
+                  Data Analyst & Engineer
                 </h2>
                 <div className="flex flex-wrap gap-3 text-sm text-white/70">
                   <span className="flex items-center gap-1">
                     <Database className="w-4 h-4" />
-                    Data Infrastructure
+                    Data Engineering
                   </span>
                   <span className="flex items-center gap-1">
                     <Cloud className="w-4 h-4" />
-                    Cloud Solutions
+                    Cloud Analytics
                   </span>
                   <span className="flex items-center gap-1">
                     <Code className="w-4 h-4" />
-                    ML Engineering
+                    Business Intelligence
                   </span>
                 </div>
               </div>
@@ -57,21 +57,21 @@ const Hero = () => {
             
             {/* Description */}
             <p className="text-lg md:text-xl text-white/80 max-w-2xl leading-relaxed">
-              Architecting scalable data ecosystems that drive{" "}
-              <span className="text-cyan-300 font-semibold">$10M+ business value</span>.
-              Transforming enterprise data challenges into competitive advantages through 
-              cutting-edge engineering and strategic insights.
+              Building robust data pipelines and insightful analytics solutions that drive{" "}
+              <span className="text-cyan-300 font-semibold">business growth</span>.
+              Transforming complex data into actionable insights using modern tools 
+              and cloud technologies.
             </p>
             
             {/* Key Metrics */}
             <div className="grid grid-cols-3 gap-6 py-6">
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-white">4+</div>
-                <div className="text-sm text-white/60">Years Enterprise</div>
+                <div className="text-sm text-white/60">Years Experience</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-white">300+</div>
-                <div className="text-sm text-white/60">Stores Optimized</div>
+                <div className="text-sm text-white/60">Stores Served</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-white">5TB+</div>
@@ -83,7 +83,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button asChild className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-6 rounded-lg font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300 border-0">
                 <a href="#projects" className="flex items-center justify-center">
-                  Explore My Work
+                  View My Projects
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>

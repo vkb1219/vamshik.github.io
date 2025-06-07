@@ -1,53 +1,57 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Database, Code, Cloud, BarChart3, Brain, Settings, Lightning } from "lucide-react";
+import { Database, Code, Cloud, BarChart3, Brain, Settings, Zap } from "lucide-react";
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   
   const categories = [
     { id: 'all', name: 'All Skills', icon: <Settings className="w-4 h-4" /> },
-    { id: 'languages', name: 'Languages', icon: <Code className="w-4 h-4" /> },
+    { id: 'languages', name: 'Programming Languages', icon: <Code className="w-4 h-4" /> },
     { id: 'dataeng', name: 'Data Engineering', icon: <Database className="w-4 h-4" /> },
     { id: 'cloud', name: 'Cloud Platforms', icon: <Cloud className="w-4 h-4" /> },
-    { id: 'visualization', name: 'Visualization', icon: <BarChart3 className="w-4 h-4" /> },
-    { id: 'ml', name: 'ML/AI', icon: <Brain className="w-4 h-4" /> },
-    { id: 'salesforce', name: 'Salesforce', icon: <Lightning className="w-4 h-4" /> }
+    { id: 'visualization', name: 'Data Visualization', icon: <BarChart3 className="w-4 h-4" /> },
+    { id: 'ml', name: 'Machine Learning', icon: <Brain className="w-4 h-4" /> },
+    { id: 'salesforce', name: 'Salesforce Platform', icon: <Zap className="w-4 h-4" /> }
   ];
 
   const skillCategories = {
     languages: [
-      { name: 'Python', level: 90, description: 'Data analysis, automation, ML' },
-      { name: 'SQL', level: 85, description: 'Complex queries, optimization' },
-      { name: 'R', level: 75, description: 'Statistical analysis, modeling' },
-      { name: 'Shell Scripting', level: 70, description: 'Automation, system administration' }
+      { name: 'Python', level: 90, description: 'Data analysis, scripting, automation' },
+      { name: 'SQL', level: 85, description: 'Database queries, data manipulation' },
+      { name: 'R', level: 75, description: 'Statistical analysis, data modeling' },
+      { name: 'Shell Scripting', level: 70, description: 'Automation and system tasks' }
     ],
     dataeng: [
-      { name: 'Apache Airflow', level: 85, description: 'Workflow orchestration' },
-      { name: 'Apache Spark', level: 80, description: 'Big data processing' },
-      { name: 'Kafka', level: 75, description: 'Real-time data streaming' },
-      { name: 'SSIS', level: 80, description: 'ETL pipeline development' },
-      { name: 'Informatica', level: 75, description: 'Enterprise data integration' }
+      { name: 'Apache Airflow', level: 85, description: 'Workflow orchestration and scheduling' },
+      { name: 'Apache Spark', level: 80, description: 'Large-scale data processing' },
+      { name: 'Apache Kafka', level: 75, description: 'Real-time data streaming' },
+      { name: 'SSIS', level: 80, description: 'SQL Server Integration Services' },
+      { name: 'Informatica', level: 75, description: 'Enterprise data integration platform' },
+      { name: 'ETL/ELT Pipelines', level: 85, description: 'Data extraction and transformation' }
     ],
     cloud: [
-      { name: 'Azure', level: 85, description: 'Databricks, Data Factory, SQL DB' },
-      { name: 'AWS', level: 80, description: 'S3, Lambda, RDS, Redshift' },
-      { name: 'GCP', level: 75, description: 'BigQuery, Cloud Functions' }
+      { name: 'Microsoft Azure', level: 85, description: 'Databricks, Data Factory, SQL Database' },
+      { name: 'Amazon AWS', level: 80, description: 'S3, Lambda, RDS, Redshift services' },
+      { name: 'Google Cloud', level: 75, description: 'BigQuery, Cloud Functions, Storage' }
     ],
     visualization: [
-      { name: 'Power BI', level: 90, description: 'Interactive dashboards, DAX' },
-      { name: 'Tableau', level: 85, description: 'Advanced visualizations' },
-      { name: 'Shiny', level: 70, description: 'R-based web applications' }
+      { name: 'Power BI', level: 90, description: 'Interactive dashboards and reports' },
+      { name: 'Tableau', level: 85, description: 'Advanced data visualizations' },
+      { name: 'Python Visualization', level: 80, description: 'Matplotlib, Seaborn, Plotly' },
+      { name: 'R Shiny', level: 70, description: 'Interactive web applications' }
     ],
     ml: [
-      { name: 'TensorFlow', level: 75, description: 'Deep learning models' },
-      { name: 'Scikit-learn', level: 80, description: 'ML algorithms, preprocessing' },
-      { name: 'Time-Series Forecasting', level: 80, description: 'ARIMA, Prophet, LSTM' },
-      { name: 'NLP', level: 75, description: 'Text analysis, sentiment analysis' }
+      { name: 'TensorFlow', level: 75, description: 'Deep learning and neural networks' },
+      { name: 'Scikit-learn', level: 80, description: 'Machine learning algorithms' },
+      { name: 'Time Series Analysis', level: 80, description: 'Forecasting and trend analysis' },
+      { name: 'Natural Language Processing', level: 75, description: 'Text mining and sentiment analysis' }
     ],
     salesforce: [
-      { name: 'Platform Developer I', level: 85, description: 'Apex, Lightning, SOQL' },
-      { name: 'Data Integration', level: 80, description: 'APIs, data connectors' }
+      { name: 'Platform Developer I', level: 85, description: 'Apex, Lightning Components, SOQL' },
+      { name: 'Data Integration', level: 80, description: 'APIs, connectors, data synchronization' },
+      { name: 'Custom Objects & Fields', level: 75, description: 'Schema design and customization' }
     ]
   };
 
@@ -75,11 +79,11 @@ const Skills = () => {
       <div className="container-custom relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-6">
-            Technical Expertise
+            Technical Skills & Expertise
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto mb-6"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            My comprehensive toolkit for data engineering, analysis, and visualization
+            Comprehensive toolkit for data engineering, analysis, and visualization
           </p>
         </div>
         
@@ -114,7 +118,7 @@ const Skills = () => {
                       {getCategoryIcon(categoryId)}
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-800 capitalize">
+                  <h3 className="text-2xl font-bold text-slate-800">
                     {categories.find(cat => cat.id === categoryId)?.name}
                   </h3>
                 </div>
