@@ -24,7 +24,7 @@ const experiences = [
   {
     position: "Business Intelligence Developer",
     company: "KFintech Pvt Ltd",
-    period: "April 2020 - December 2021",
+    period: "April 2018 - December 2021",
     responsibilities: [
       "Designed and maintained ETL pipelines using SSIS and Informatica, improving data delivery efficiency by 30% for financial reporting.",
       "Integrated multiple financial data sources into a centralized data warehouse, enhancing data consistency by 20%.",
