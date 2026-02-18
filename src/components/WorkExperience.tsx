@@ -20,6 +20,25 @@ const experiences = [
       "Built automated data validation frameworks using Python, reducing data errors in production by 60%.",
       "Applied NLP techniques to analyze customer feedback data, providing insights that improved customer satisfaction metrics by 12%."
     ]
+  },
+  {
+    position: "Business Intelligence Developer",
+    company: "KFintech Pvt Ltd (Hyderabad, India)",
+    period: "April 2018 - December 2021",
+    responsibilities: [
+      "Designed and supported enterprise analytics solutions for large-scale financial services platforms using SQL, SSIS, and Power BI.",
+      "Built centralized reporting layers by integrating 10+ structured financial data sources, improving enterprise-wide KPI reporting consistency and accessibility.",
+      "Developed optimized SQL stored procedures, complex joins, and transformation logic to reduce batch processing time by 25% and improve reporting reliability.",
+      "Delivered Power BI dashboards tracking mortgage lifecycle KPIs, loan funnel performance, customer onboarding metrics, operational efficiency, and risk indicators.",
+      "Implemented dimensional data models (star schema and snowflake schema) to improve analytics performance, scalability, and reporting flexibility.",
+      "Performed financial data reconciliation, variance analysis, and audit validation to ensure regulatory compliance and reporting accuracy.",
+      "Built parameterized reports and reusable datasets to support self-service analytics adoption by business teams.",
+      "Partnered with business stakeholders to gather reporting requirements, define financial KPIs, and prioritize analytics enhancements.",
+      "Supported UAT testing, regression testing, and production deployments to ensure smooth BI release cycles.",
+      "Created technical documentation, data dictionaries, and reporting guidelines to standardize analytics processes.",
+      "Conducted end-user training sessions to improve dashboard adoption and data literacy across operations and finance teams.",
+      "Provided production support and performance tuning for critical business dashboards used by senior leadership."
+    ]
   }
 ];
 
