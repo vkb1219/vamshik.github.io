@@ -20,23 +20,6 @@ const experiences = [
       "Built automated data validation frameworks using Python, reducing data errors in production by 60%.",
       "Applied NLP techniques to analyze customer feedback data, providing insights that improved customer satisfaction metrics by 12%."
     ]
-  },
-  {
-    position: "Business Intelligence Developer",
-    company: "KFintech Pvt Ltd",
-    period: "April 2018 - December 2021",
-    responsibilities: [
-      "Designed and maintained ETL pipelines using SSIS and Informatica, improving data delivery efficiency by 30% for financial reporting.",
-      "Integrated multiple financial data sources into a centralized data warehouse, enhancing data consistency by 20%.",
-      "Developed optimized SQL scripts and stored procedures, reducing data processing times by 25% for critical reports.",
-      "Created comprehensive Power BI dashboards for mortgage lifecycle tracking, providing stakeholders with real-time insights.",
-      "Implemented star and snowflake schema designs for data warehouse optimization, reducing storage costs by 15%.",
-      "Automated deployment processes using Jenkins, streamlining releases and reducing errors by 15%.",
-      "Ensured GDPR compliance across financial data processing systems through improved data governance practices.",
-      "Implemented Azure Data Catalog for better data discoverability, improving analyst productivity by 45%.",
-      "Conducted training sessions for business users on self-service analytics tools, reducing BI team dependency by 25%.",
-      "Successfully managed data migration for legacy financial systems, processing 5TB of historical data with zero downtime."
-    ]
   }
 ];
 
