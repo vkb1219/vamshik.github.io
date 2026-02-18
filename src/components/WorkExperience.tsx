@@ -23,7 +23,7 @@ const experiences = [
   },
   {
     position: "Business Intelligence Developer",
-    company: "KFintech Pvt Ltd (Hyderabad, India)",
+    company: "KFintech Pvt Ltd",
     period: "April 2018 - December 2021",
     responsibilities: [
       "Designed and supported enterprise analytics solutions for large-scale financial services platforms using SQL, SSIS, and Power BI.",
